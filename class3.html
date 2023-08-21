@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .bx:hover {
+        background-color: aqua;
+        color: black;
+      }
+
+      p:hover::before {
+        content: "Highlight";
+        color: blue;
+        font-size: 50px;
+      }
+
+      p:hover::after {
+        content: "after Highlight";
+        color: rgb(255, 0, 157);
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bx">
+      <h3>this is hover css
+      </h3>
+
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima et reiciendis esse animi laudantium nam!</p>
+  </body>
+
+</html>
